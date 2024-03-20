@@ -2,27 +2,30 @@ package org.example;
 
 import lombok.*;
 
-@AllArgsConstructor
-@NoArgsConstructor
+
+@ToString
 @Getter
 @Setter
-@ToString
-public class Person {
-    private String name;
-    private String destination;
-    private int age;
-    private boolean isDriver;
-    private boolean isPassenger;
+public class Person implements Comparable<Person> {
 
-    public Person(String name, int age, boolean isDriver, boolean isPassenger){
-        this.name = name;
-        this.age = age;
-        if(isDriver == isPassenger){
-            System.out.println("O pesroana nu poate fi si sofer si pasager in acelasi timp");
-        }
-        else {
-            this.isDriver = isDriver;
-            this.isPassenger = isPassenger;
-        }
+    String name;
+    String destination;
+    int age;
+    boolean isDriver;
+    boolean isPassenger;
+
+    public boolean getIsDriver() {
+        return this.isDriver;
+    }
+
+    public boolean getIsPassenger() {
+        return this.isPassenger;
+    }
+
+    public int getAge(){return this.age;}
+
+    @Override
+    public int compareTo(Person o) {
+        return this.getAge() - o.getAge();
     }
 }
