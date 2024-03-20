@@ -1,3 +1,5 @@
+import java.time.LocalTime;
+
 public class Pair<T, U> {
     private T first;
     private U second;
@@ -13,5 +15,13 @@ public class Pair<T, U> {
 
     public U getSecond() {
         return second;
+    }
+
+    public void setFirst(T first) {
+        this.first = first;
+    }
+
+    public void setSecond(U second) {
+        this.second = second;
     }
 }

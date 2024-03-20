@@ -1,14 +1,24 @@
 import java.time.LocalDate;
-import java.util.Map;
+import java.time.LocalTime;
+import java.util.HashMap;
 
 public class Statue extends Attraction{
 
-    private kind tip;
-    public Statue(){
-        this.tip = kind.STATUIA;
+    protected String name;
+    protected boolean visited;
+
+    public Statue(String name){
+        this.name = name;
+        this.visited = false;
     }
 
-    public kind getTip() {
-        return tip;
+    @Override
+    public String getName(){return this.name;}
+
+
+
+    @Override
+    public HashMap<LocalDate, Pair<LocalTime, LocalTime>> getTimeTable() {
+        return this.timeTable;
     }
 }

@@ -1,16 +1,26 @@
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.Map;
+
 public class Concert extends Attraction implements Payable{
 
-    private kind tip;
+    protected String name;
+    protected boolean visited;
 
-    public Concert(){
-        this.tip = kind.CONCERTUL;
+    public Concert(String name){
+        this.name = name;
+        this.visited = false;
     }
     @Override
     public double getTicketPrice() {
         return 0;
     }
 
-    public kind getTip() {
-        return tip;
+    @Override
+    public String getName(){return this.name;}
+
+    @Override
+    public Map<LocalDate, Pair<LocalTime, LocalTime>> getTimeTable() {
+        return this.timeTable;
     }
 }

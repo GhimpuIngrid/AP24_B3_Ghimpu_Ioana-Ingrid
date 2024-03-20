@@ -1,23 +1,20 @@
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.Map;
 
-public class Church extends Attraction implements Visitable{
+public class Church extends Attraction{
 
-    private kind tip;
-    public Church(){
-        this.tip = kind.BISERICA;
+    protected String name;
+    protected boolean visited;
+    public Church(String name){
+        this.name = name;
+        this.visited = false;
     }
     @Override
-    public Map<LocalDate, TimeInterval> getTimeTable() {
-        return null;
-    }
+    public String getName(){return this.name;}
 
     @Override
-    public LocalDate getOpeningHour(LocalDate date) {
-        return null;
-    }
-
-    public kind getTip() {
-        return tip;
+    public Map<LocalDate, Pair<LocalTime, LocalTime>> getTimeTable() {
+        return this.timeTable;
     }
 }
