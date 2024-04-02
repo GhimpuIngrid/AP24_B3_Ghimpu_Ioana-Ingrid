@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class RandomGen {
@@ -13,5 +15,12 @@ public class RandomGen {
     public static boolean bool(){
         Random val = new Random();
         return(val.nextBoolean());
+    }
+
+    public static List<Location> genStops(){
+        List<Location> location = new ArrayList<>();
+
+
+        return location;
     }
 }

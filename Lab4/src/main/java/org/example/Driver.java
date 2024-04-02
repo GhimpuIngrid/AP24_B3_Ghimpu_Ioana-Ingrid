@@ -8,6 +8,8 @@ import lombok.*;
 public class Driver extends Person{
 
     private boolean free;
+    private String destination;
+    private String start;
 
     public Driver(String name, int age, boolean isDriver)
     {
