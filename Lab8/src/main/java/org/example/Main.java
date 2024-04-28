@@ -16,7 +16,11 @@ public class Main {
         AuthDAO authDAO = new AuthDAO(conn);
 
         Auth auth1 = new Auth(4, "Andrzej Sapkowski");
-        authDAO.addAuth(auth1);
+        //authDAO.addAuth(auth1);
+
+        //authDAO.updateAuth(4, "H.P. Lovecraft");
+
+        authDAO.deleteAuth(4);
 
         List<Auth> authors = new ArrayList<>();
         authors = authDAO.getAuth();
@@ -25,22 +29,5 @@ public class Main {
             System.out.println(auth);
         }
 
-        authDAO.updateAuth(4, "H.P. Lovecraft");
-
-        List<Auth> updatedAuthors = new ArrayList<>();
-        updatedAuthors = authDAO.getAuth();
-
-        for(Auth auth: updatedAuthors){
-            System.out.println(auth);
-        }
-
-        authDAO.deleteAuth(4);
-
-        List<Auth> deletedAuthors = new ArrayList<>();
-        deletedAuthors = authDAO.getAuth();
-
-        for(Auth auth: deletedAuthors){
-            System.out.println(auth);
-        }
     }
 }

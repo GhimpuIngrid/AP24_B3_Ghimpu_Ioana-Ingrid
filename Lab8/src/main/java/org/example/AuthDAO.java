@@ -49,7 +49,7 @@ public class AuthDAO {
     }
 
     public void updateAuth(int id, String name) throws SQLException {
-        PreparedStatement statement = this.connection.prepareStatement("UPDATE Authors SET AuthName = ? WHERE id = ?");
+        PreparedStatement statement = this.connection.prepareStatement("UPDATE Authors SET AuthName = ? WHERE AID = ?");
         statement.setString(1, name);
         statement.setInt(2, id);
         statement.executeUpdate();
