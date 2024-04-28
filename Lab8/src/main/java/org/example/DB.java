@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class DB {
     private static final String URL = "jdbc:mysql://localhost:3306/Library";
-    private static final String USER = "mysql";
+    private static final String USER = "root";
     private static final String PASSWORD = "student";
     private static Connection connection = null;
 
@@ -14,7 +14,7 @@ public class DB {
     public static Connection getConnection() {
         try {
             if (connection == null || connection.isClosed()) {
-                createConnection();
+                connection = createConnection();
             }
         } catch (SQLException e) {
             System.err.println("Eroare la verificarea stării conexiunii: " + e.getMessage());
@@ -22,13 +22,14 @@ public class DB {
         return connection;
     }
 
-    private static void createConnection() {
+    private static Connection createConnection() {
         try {
+
             connection = DriverManager.getConnection(URL, USER, PASSWORD);
-            connection.setAutoCommit(false);
         } catch (SQLException e) {
             System.err.println("Eroare la crearea conexiunii la baza de date: " + e.getMessage());
         }
+        return connection;
     }
 
     public static void closeConnection() {
