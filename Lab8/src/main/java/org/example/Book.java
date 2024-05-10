@@ -1,5 +1,6 @@
 package org.example;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Book {
@@ -7,12 +8,12 @@ public class Book {
     private String title;
     private int authId;
     private int genId;
-    private Date date;
+    private int date;
     private int numberOfPages;
     private Auth auth;
     private Genre gen;
 
-    public Book(int id, String title, int authId, int genId, Date date, int numberOfPages){
+    public Book(int id, String title, int authId, int genId, int date, int numberOfPages){
         this.id = id;
         this.title = title;
         this.authId = authId;
@@ -37,7 +38,7 @@ public class Book {
         return genId;
     }
 
-    public Date getDate() {
+    public int getDate() {
         return date;
     }
 
@@ -47,7 +48,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Cartea " + this.getTitle() + "este scrisa de " + this.getAuthId()
+        return "Cartea " + this.getTitle() + " este scrisa de " + this.getAuthId()
                 + ", este o carte de " + this.getGenId() + ", a fost publicata in " +
                 this.getDate() + " si are " + this.numberOfPages + " pagini.";
     }

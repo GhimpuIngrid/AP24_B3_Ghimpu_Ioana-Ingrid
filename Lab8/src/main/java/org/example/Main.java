@@ -1,13 +1,17 @@
 package org.example;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.Calendar;
 
 public class Main {
-    public static void main(String[] args) throws SQLException {
-        Connection conn = DB.getConnection();
+    public static void main(String[] args) throws SQLException, IOException {
+        Connection conn = ConnPool.getConnection();
         if (conn != null)
             System.out.println("Am facut conexiunea");
         else
@@ -47,11 +51,21 @@ public class Main {
 
         BooksDAO booksDAO = new BooksDAO(conn);
 
+        Book book1 = new Book(4, "AA", 2, 2, 1990, 100);
+        //booksDAO.addBook(book1);
+
+        //booksDAO.updateBookTitle(4, "BB");
+
+        //booksDAO.deleteBook(4);
+
         List<Book> books = booksDAO.getBooks();
 
         for(Book book : books){
-            System.out.println(book);
+            //System.out.println(book);
         }
+
+        NewData newData = new NewData();
+        newData.readData();
 
     }
 }
