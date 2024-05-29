@@ -5,14 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1993983-1603-4f59-bf79-d26708ccebe1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Lab11/src/main/java/com/example/Lab11/BookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11/src/main/java/com/example/Lab11/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11/src/main/java/com/example/Lab11/Repositories/BookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11/src/main/java/com/example/Lab11/entities/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11/src/main/java/com/example/Lab11/entities/Genre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab11/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab11/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab11/src/main/java/com/example/Lab11/Lab11Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab11/src/main/java/com/example/Lab11/Lab11Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab11/src/main/java/com/example/Lab11/entities/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab11/src/main/java/com/example/Lab11/entities/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/ClientApp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/ClientApp/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/ClientApp/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/ClientApp/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/ClientApp/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/ClientApp/src/main/java/com/example/ClientApp/Author.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/ClientApp/src/main/java/com/example/ClientApp/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/ClientApp/src/main/java/com/example/ClientApp/BookCaller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/ClientApp/src/main/java/com/example/ClientApp/ClientAppApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/ClientApp/src/main/java/com/example/ClientApp/Genre.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/ClientApp/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/ClientApp/src/test/java/com/example/ClientApp/ClientAppApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Lab11/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Lab11/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Lab11/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Lab11/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Lab11/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Lab11/src/main/java/com/example/Lab11/AuthorsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Lab11/src/main/java/com/example/Lab11/AuthorsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Lab11/src/main/java/com/example/Lab11/BookController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Lab11/src/main/java/com/example/Lab11/BookService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Lab11/src/main/java/com/example/Lab11/DBConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Lab11/src/main/java/com/example/Lab11/Lab11Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Lab11/src/main/java/com/example/Lab11/Repositories/AuthorRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Lab11/src/main/java/com/example/Lab11/Repositories/BookRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Lab11/src/main/java/com/example/Lab11/entities/Author.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Lab11/src/main/java/com/example/Lab11/entities/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Lab11/src/main/java/com/example/Lab11/entities/Genre.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Lab11/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Lab11/src/test/java/com/example/Lab11/Lab11ApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,6 +103,7 @@
       <workItem from="1716744771885" duration="676000" />
       <workItem from="1716878641091" duration="82000" />
       <workItem from="1716940411735" duration="614000" />
+      <workItem from="1716967584854" duration="361000" />
     </task>
     <servers />
   </component>
