@@ -10,7 +10,7 @@ import java.sql.SQLException;
 @SpringBootApplication
 public class Lab11Application {
 
-	public static void main(String[] args) throws SQLException {
+	public static void main(String[] args) {
 		
 		SpringApplication.run(Lab11Application.class, args);
 	}
