@@ -7,6 +7,7 @@ public class Client {
     public Client(){
 
     }
+
     public Client(String name, int timePeriodStart, int timePeriodFinish, Type clientType){
         if(timePeriodFinish <= timePeriodStart){
             System.out.println("Timpul de inceput trebuie sa fie mai mic (mai devreme) decat timpul de final");

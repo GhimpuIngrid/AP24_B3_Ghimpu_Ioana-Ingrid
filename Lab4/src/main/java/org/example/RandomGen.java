@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Random;
 
 public class RandomGen {
+
+    @Test
     public static int genAge(){
         int min = 20;
         int max = 60;
@@ -12,11 +14,13 @@ public class RandomGen {
         return random;
     }
 
+    @Test
     public static boolean bool(){
         Random val = new Random();
         return(val.nextBoolean());
     }
 
+    @Test
     public static List<Location> genStops(){
         List<Location> location = new ArrayList<>();
 

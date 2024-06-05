@@ -3,6 +3,7 @@ package org.example;
 import java.util.*;
 
 public class Problem {
+    @Test
     public List<Person> getPeople(){
         List<Person> people = new ArrayList<>();
 
@@ -16,12 +17,14 @@ public class Problem {
         return people;
     }
 
+    @Test
     public LinkedList<Person> getDrivers(List<Person> people){
         List<Person> drivers = new LinkedList<>();
         drivers = people.stream().filter(person -> person.getIsDriver()).toList();
-        return drivers;
+        return (LinkedList<Person>) drivers;
     }
 
+    @Test
     public TreeSet<Person> getPassengers (List<Person> people){
 
         List<Person>passengers = people.stream().filter(person -> person.getIsPassenger()).toList();
@@ -30,11 +33,14 @@ public class Problem {
         return orderedPassengers;
     }
 
+    @Test
     public LinkedList<Person> orderDriversByAge(List<Person> drivers){
-        return drivers.stream().sorted(Comparator.comparing(Person::getAge)).toList();
+        return (LinkedList<Person>) drivers.stream().sorted(Comparator.comparing(Person::getAge)).toList();
     }
 
+    @Test
     public List<Location> getLocations(){
 
+        return List.of();
     }
 }

@@ -1,13 +1,5 @@
 package org.example;
 
-import lombok.*;
-
-import java.util.Comparator;
-
-
-@ToString
-@Getter
-@Setter
 public class Passenger extends Person {
 
     private boolean taken;
@@ -20,6 +12,7 @@ public class Passenger extends Person {
         this.isPassenger = !this.isDriver;
     }
 
+    @Test
     public String toString(){
 
         return this.getClass() + " " + this.getAge();

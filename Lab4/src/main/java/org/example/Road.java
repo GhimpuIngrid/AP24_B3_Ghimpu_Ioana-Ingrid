@@ -1,17 +1,8 @@
 package org.example;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-import java.util.ArrayList;
 import java.util.List;
 
-@AllArgsConstructor
-@NoArgsConstructor
-@Getter
-@Setter
+
 public class Road {
     private String start;
     private String destination;
@@ -23,15 +14,18 @@ public class Road {
         this.setStops(RandomGen.genStops());
     }
 
+    @Test
     public void setStops(List<Location> stops){
         for(int i = 0; i < stops.size(); i++)
             this.addStops(stops.get(i));
     }
 
+    @Test
     public void addStops(Location l){
         this.stops.add(l);
     }
 
+    @Test
     public String getStart(){
         return this.start;
     }

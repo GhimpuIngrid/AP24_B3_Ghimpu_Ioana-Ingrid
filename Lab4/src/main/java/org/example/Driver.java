@@ -1,10 +1,5 @@
 package org.example;
 
-import lombok.*;
-
-@ToString
-@Getter
-@Setter
 public class Driver extends Person{
 
     private boolean free;
@@ -20,6 +15,7 @@ public class Driver extends Person{
         this.isPassenger = !this.isDriver;
     }
 
+    @Test
      public String toString(){
 
          return this.getClass() + " " + this.getAge();

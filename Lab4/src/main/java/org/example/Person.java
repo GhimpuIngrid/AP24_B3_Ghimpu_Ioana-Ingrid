@@ -1,11 +1,5 @@
 package org.example;
 
-import lombok.*;
-
-
-@ToString
-@Getter
-@Setter
 public class Person implements Comparable<Person> {
 
     String name;
@@ -14,14 +8,17 @@ public class Person implements Comparable<Person> {
     boolean isDriver;
     boolean isPassenger;
 
+    @Test
     public boolean getIsDriver() {
         return this.isDriver;
     }
 
+    @Test
     public boolean getIsPassenger() {
         return this.isPassenger;
     }
 
+    @Test
     public int getAge(){return this.age;}
 
     @Override
